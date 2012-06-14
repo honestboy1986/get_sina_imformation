@@ -26,5 +26,5 @@ def get_client_info():
     
 def get_client():
     client = APIClient(app_key=APP_KEY, app_secret=APP_SECRET)
-    client.set_access_token("2.00gYWiIBp4pd6Ee7d5f05165UEjaFE", "1339487211")
+    client.set_access_token("2.00gYWiIBp4pd6Ec9577d2e5cuFG45B", "1339761841")
     return client
