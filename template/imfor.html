@@ -3,12 +3,13 @@
         <a href="/time_line">imformation</a>
         <h1>box text</h1>
         <table border="1" bgcolor="red">
+        %for info in name['statuses']:
         <tr>
-        <td align="left">line1,cell1</td><td align="left">line1.cell2</td><td align="left">line1,cell3</td>
+        <td align="left">$info["user"]["name"]</td>
+        <td align="left"><img src="$info['user']['avatar_large']"></img></td>
+        <td align="left">$info["text"]</td>
         </tr>
-        <tr>
-        <td>line2.cell1</td><td>line2.cell2</td><td>line2.cell3</td>
-        </tr>
+        %endfor
         </table>
         <table cellpadding="10" bgcolor="green">
         <ul type="a">
