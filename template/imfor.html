@@ -5,9 +5,9 @@
         <table border="1" bgcolor="red">
         %for info in name['statuses']:
         <tr>
-        <td align="left">$info["user"]["name"]</td>
-        <td align="left"><img src="$info['user']['avatar_large']"></img></td>
-        <td align="left">$info["text"]</td>
+        <td align="left">${info["user"]["name"]}</td>
+        <td align="left"><img src="${info['user']['avatar_large']}"></img></td>
+        <td align="left">${info["text"]}</td>
         </tr>
         %endfor
         </table>
