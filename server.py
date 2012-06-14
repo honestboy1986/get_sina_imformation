@@ -13,8 +13,8 @@ def index():
 @route('/time_line')
 def time_line():
     mytemplate = Template(filename='template/imfor.html')
-    #i = get_client().get.statuses__user_timeline()
-    return mytemplate.render(name="get.imformation")
+    i = get_client().get.statuses__user_timeline()
+    return mytemplate.render(name=i)
 
 @route('/add_auth')
 def add_auth():
